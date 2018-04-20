@@ -140,10 +140,11 @@ def num_points_scored(player_name)
     end
 end
 
-# take players name as argument and provides the player's shoe size 
+# take players name as argument and provides the player's shoe size
 def shoe_size(player_name)
     game_hash.each do |shoe_size, team|
         if team[:players][player_name]
+          #the below team [:players][player_name][:shoe] gives shoe size 
             return team[:players][player_name][:shoe]
         end
     end
