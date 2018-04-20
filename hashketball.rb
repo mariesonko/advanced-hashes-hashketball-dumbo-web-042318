@@ -175,6 +175,7 @@ def team_names
     #["Brooklyn Nets", "Charlotte Hornets"]
 end
 
+# player_numbers returns an array of the jersey number's for that team.
 def player_numbers(team_name)
     jersey_numbers = []
     game_hash.each do |original, team|
@@ -206,7 +207,7 @@ def big_shoe_rebounds
     player = ""
     game_hash.each do |original, team|
         team[:players].each do |name, stats|
-          # conditional statement calling shoe_size(player_name) function 
+          # conditional statement calling shoe_size(player_name) function
             if largest_shoe_size < shoe_size(name)
                 largest_shoe_size = shoe_size(name)
                 player = name
