@@ -170,6 +170,7 @@ def team_names
         array_of_team_names << team[:team_name]
     end
     array_of_team_names
+    #["Brooklyn Nets", "Charlotte Hornets"]
 end
 
 def player_numbers(team_name)
