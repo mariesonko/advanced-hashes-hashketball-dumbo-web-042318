@@ -191,6 +191,7 @@ def player_numbers(team_name)
 
 end
 
+# player_stats returns a hash of that player's stats 
 def player_stats(player_name)
     game_hash.each do |original, team|
       stats = team[:players][player_name]
