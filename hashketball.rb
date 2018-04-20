@@ -161,7 +161,8 @@ def team_colors(team_name)
     end
     # should return a flat array with only values without the :colors keys
     that_team_colors.flatten
-    # for "Brooklyn Nets" it should return c0lors ("Black", "White")
+    # for "Brooklyn Nets" should be ("Black", "White")
+    # for "Charlotte Hornets") colors should be ("Turquoise", "Purple")
 end
 
 #using the game_hash it will return a array of team names based on the team (eg home or away team )
