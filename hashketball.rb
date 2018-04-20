@@ -131,7 +131,8 @@ end
 
 def num_points_scored(player_name)
     game_hash.each do |original, team|
-      stats = team[:players][player_name]
+      # points is in the players hash, need the player's name to get points for player 
+      stats = team[:players][player_name] 
       if stats
         return stats[:points]
       end
