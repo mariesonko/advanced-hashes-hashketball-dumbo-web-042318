@@ -136,6 +136,7 @@ def num_points_scored(player_name)
       stats = team[:players][player_name]
       if stats
         return stats[:points]
+        # number of points scored by each player
       end
     end
 end
@@ -146,6 +147,7 @@ def shoe_size(player_name)
         if team[:players][player_name]
           #the below team [:players][player_name][:shoe] gives shoe size
             return team[:players][player_name][:shoe]
+            # gives the shoe size for each player 
         end
     end
 end
@@ -191,7 +193,7 @@ def player_numbers(team_name)
 
 end
 
-# player_stats returns a hash of that player's stats 
+# player_stats returns a hash of that player's stats
 def player_stats(player_name)
     game_hash.each do |original, team|
       stats = team[:players][player_name]
