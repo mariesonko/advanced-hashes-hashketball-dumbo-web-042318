@@ -129,7 +129,7 @@ def game_hash
 
 end
 
-# num_points_scored returns the number of points a player scored 
+# num_points_scored returns the number of points a player scored
 def num_points_scored(player_name)
     game_hash.each do |original, team|
       # points is in the players hash, need the player's name to get points for player
@@ -140,6 +140,7 @@ def num_points_scored(player_name)
     end
 end
 
+# take players name as argument and provides the player's shoe size 
 def shoe_size(player_name)
     game_hash.each do |shoe_size, team|
         if team[:players][player_name]
