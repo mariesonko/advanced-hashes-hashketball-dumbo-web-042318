@@ -216,39 +216,3 @@ def big_shoe_rebounds
     return player_stats(player)[:rebounds]
 end
 
-def most_points_scored(team_name)
-    players = player_names(team_name)
-    most_points = 0
-   top_player_name = ""
-
-    players.each do |player|
-        if most_points < num_points_scored(player)
-            most_points = num_points_scored(player)
-            top_player_name = player
-        end
-    end
-    return top_player_name
-end
-
-def winning_team(team_name1, team_name2)
-    the_winner  = ""
-    if total_points_scored(team_name1) > total_points_scored(team_name2)
-        the_winner  = team_name1
-    else
-        the_winner  = team_name2
-    end
-    return the_winner
-end
-
-def player_with_longest_name(team_name)
-    players = player_names(team_name)
-    new_Length = 0
-    longest_name = ""
-    players.each do |player|
-        if new_Length < player.length
-            new_Length = player.length
-            longest_name = player
-        end
-    end
-    return longest_name
-end
