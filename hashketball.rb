@@ -150,19 +150,20 @@ def shoe_size(player_name)
     end
 end
 
-# team_colors return an array of the team colors 
+# team_colors return an array of the team colors
 def team_colors(team_name)
     that_team_colors = []
     game_hash.each do |original_team, team_attribute|
         if team_attribute[:team_name] == team_name
-          # returns original team color based on the team name 
+          # returns original team color based on the team name
             that_team_colors << game_hash[original_team][:colors]
         end
     end
-    # should return a flat array with only values without the :colors keys 
+    # should return a flat array with only values without the :colors keys
     that_team_colors.flatten
 end
 
+#using the game_hash it will return a array of team names based on the team (eg home or away team )
 def team_names
     array_of_team_names = []
     game_hash.each do |original_team, team|
