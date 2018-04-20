@@ -195,6 +195,7 @@ def player_stats(player_name)
       stats = team[:players][player_name]
       if stats
           return stats
+          #gives stats for all 10 players for both teams 
       end
     end
 end
