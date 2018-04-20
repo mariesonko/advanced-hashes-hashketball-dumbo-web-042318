@@ -130,8 +130,8 @@ end
 def num_points_scored(player_name)
     game_hash.each do |original, team|
       stats = team[:players][player_name]
-      if stats # If not empty
-          return stats[:points]
+      if stats
+        return stats[:points]
       end
     end
 end
@@ -234,6 +234,3 @@ def player_with_longest_name(team_name)
     end
     return longest_name
 end
-
-# def long_name_steals_a_ton?
-  # end
