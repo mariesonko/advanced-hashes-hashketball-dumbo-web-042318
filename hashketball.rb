@@ -182,6 +182,9 @@ def player_numbers(team_name)
         end
     end
     return jersey_numbers
+    #charlotte_numbers = [0, 2, 4, 8, 33]
+    # brooklyn_numbers = [0, 1, 11, 30, 31]
+
 end
 
 def player_stats(player_name)
