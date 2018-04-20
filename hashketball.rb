@@ -147,7 +147,7 @@ def shoe_size(player_name)
         if team[:players][player_name]
           #the below team [:players][player_name][:shoe] gives shoe size
             return team[:players][player_name][:shoe]
-            # gives the shoe size for each player 
+            # gives the shoe size for each player
         end
     end
 end
